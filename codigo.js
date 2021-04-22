@@ -1,9 +1,9 @@
 console.log("funcionando");
 
 //Variables de operaciones
-var operandoa;
-var operandob;
-var operacion;
+let operandoa;
+let operandob;
+let operacion;
 
 //Resultado de operaciones
 const resul = document.getElementById("resultado");
@@ -132,6 +132,8 @@ cero.onclick = function(){
     resul.textContent = resul.textContent + "0";
 }
 
+let texto = resul.textContent;
+
 decimal.onclick = function(){
     resul.textContent = resul.textContent + ".";
 }
@@ -144,6 +146,7 @@ igual.onclick = function(){
 //Funciones operatorias
 function limpiar() {
     resul.textContent = "";
+    botones = 1;
 }
 
 function resetear() {
@@ -151,6 +154,7 @@ function resetear() {
     operandoa = 0;
     operandob = 0;
     operacion = "";
+    botones = 1;
 }
 
 function resolver() {
